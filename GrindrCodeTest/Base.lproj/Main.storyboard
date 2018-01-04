@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GRs-nu-5qV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ETX-qT-1pR">
+            <objects>
+                <navigationController id="GRs-nu-5qV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="blackTranslucent" id="rVa-R7-ial">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.29411764705882354" green="0.22352941176470587" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GTD-d3-4gT" kind="relationship" relationship="rootViewController" id="Haz-Pn-R6l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzb-nn-8cx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-868" y="358"/>
+        </scene>
+        <!--GRHomeViewController-->
+        <scene sceneID="lMf-3e-rz4">
+            <objects>
+                <viewController storyboardIdentifier="GRHomeViewController" id="GTD-d3-4gT" userLabel="GRHomeViewController" customClass="GRHomeViewController" customModule="GrindrCodeTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MYy-7e-ty8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="H2t-qR-4VP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.094117647058823528" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kUd-KH-zB6">
+                                    <size key="itemSize" width="52" height="97"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GRQuestionCollectionViewCell" id="Zyb-us-lNU" customClass="GRQuestionCollectionViewCell" customModule="GrindrCodeTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="97"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="52" height="97"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EaI-Da-MVb" customClass="GRImageView" customModule="GrindrCodeTest" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="52" height="98"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="800" text="" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRA-yS-6NG">
+                                                    <rect key="frame" x="0.0" y="48.5" width="52" height="0.0"/>
+                                                    <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="900" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HC-bW-oZv">
+                                                    <rect key="frame" x="0.0" y="48.5" width="52" height="0.0"/>
+                                                    <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.08235294118" green="0.13725490200000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="8HC-bW-oZv" firstAttribute="leading" secondItem="Zyb-us-lNU" secondAttribute="leading" id="7Py-9S-XrP"/>
+                                            <constraint firstItem="EaI-Da-MVb" firstAttribute="height" secondItem="Zyb-us-lNU" secondAttribute="height" constant="1" id="EiO-Lv-Jq2"/>
+                                            <constraint firstItem="EaI-Da-MVb" firstAttribute="leading" secondItem="Zyb-us-lNU" secondAttribute="leading" id="Gbc-bx-2iF"/>
+                                            <constraint firstItem="jRA-yS-6NG" firstAttribute="centerY" secondItem="Zyb-us-lNU" secondAttribute="centerY" id="Lx0-Mb-sHv"/>
+                                            <constraint firstItem="jRA-yS-6NG" firstAttribute="bottom" secondItem="8HC-bW-oZv" secondAttribute="top" id="bvm-AA-Kcp"/>
+                                            <constraint firstAttribute="trailing" secondItem="jRA-yS-6NG" secondAttribute="trailing" id="kCq-3J-wpU"/>
+                                            <constraint firstAttribute="trailing" secondItem="8HC-bW-oZv" secondAttribute="trailing" id="om1-nG-gcy"/>
+                                            <constraint firstItem="EaI-Da-MVb" firstAttribute="top" secondItem="Zyb-us-lNU" secondAttribute="top" id="pau-w9-GZS"/>
+                                            <constraint firstItem="jRA-yS-6NG" firstAttribute="leading" secondItem="Zyb-us-lNU" secondAttribute="leading" id="pnN-CA-qVq"/>
+                                            <constraint firstAttribute="trailing" secondItem="EaI-Da-MVb" secondAttribute="trailing" id="xxE-NG-htI"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="subTitle" destination="8HC-bW-oZv" id="v39-CS-KSZ"/>
+                                            <outlet property="thumbnail" destination="EaI-Da-MVb" id="lfS-91-Jl4"/>
+                                            <outlet property="title" destination="jRA-yS-6NG" id="egO-lF-Mce"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="GTD-d3-4gT" id="OOu-LZ-mqb"/>
+                                    <outlet property="delegate" destination="GTD-d3-4gT" id="TNs-oo-tOU"/>
+                                </connections>
+                            </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="d8o-33-puH">
+                                <rect key="frame" x="169" y="347" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gAe-GA-QEo" firstAttribute="trailing" secondItem="H2t-qR-4VP" secondAttribute="trailing" id="SpQ-H1-9rF"/>
+                            <constraint firstItem="gAe-GA-QEo" firstAttribute="bottom" secondItem="H2t-qR-4VP" secondAttribute="bottom" id="XJP-qT-sXQ"/>
+                            <constraint firstItem="H2t-qR-4VP" firstAttribute="top" secondItem="gAe-GA-QEo" secondAttribute="top" id="g3O-pn-lhC"/>
+                            <constraint firstItem="d8o-33-puH" firstAttribute="centerX" secondItem="gAe-GA-QEo" secondAttribute="centerX" id="p1N-4D-P4j"/>
+                            <constraint firstItem="H2t-qR-4VP" firstAttribute="leading" secondItem="gAe-GA-QEo" secondAttribute="leading" id="xEm-5e-aPb"/>
+                            <constraint firstItem="d8o-33-puH" firstAttribute="centerY" secondItem="gAe-GA-QEo" secondAttribute="centerY" id="yQu-Vb-x3j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gAe-GA-QEo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="StackoverFlow Questions" id="BCK-d8-nnE"/>
+                    <connections>
+                        <outlet property="collectionView" destination="H2t-qR-4VP" id="eOR-bq-cZ7"/>
+                        <outlet property="indicatorView" destination="d8o-33-puH" id="c7d-vY-TIh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7bl-zE-Par" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-70" y="358"/>
+        </scene>
+    </scenes>
+</document>
